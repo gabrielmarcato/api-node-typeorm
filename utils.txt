@@ -1,0 +1,5 @@
+# Create migration
+yarn typeorm migration:create src/common/infrastructure/typeorm/migrations/*
+
+# Run migration
+yarn typeorm -- -d ./src/common/infrastructure/typeorm/index.ts migration:run 
